@@ -1,0 +1,35 @@
+.font_details(@color, @size, @weight) {
+    color: @color;
+    font-size: @size;
+    font-weight: @weight
+}
+
+.smallest() {
+    font-size: 10px;
+}
+
+.small() {
+    font-size: 12px;
+}
+
+.medium() {
+    font-size: 14px;
+}
+
+.btn(@width, @height, @border, @font) {
+    width: @width;
+    height: @height;
+    border: 1px solid @border;
+    color: @font;
+
+    background-color: transparent;
+    margin: 5px 0;
+
+    cursor: pointer;
+    transition: background-color 150ms ease, color 150ms ease;
+
+    &:hover {
+        background-color: @font;
+        color: white;
+    }
+}

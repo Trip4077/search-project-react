@@ -1,0 +1,39 @@
+.filter-panel {
+    width: 15%;
+    background-color: @secondary_color;
+}
+
+.filter-form {
+    height: 250px;
+    margin-top: 50px;
+
+    .flex-container();
+    flex-direction: column;
+    justify-content: space-around;
+
+    label {
+        font-size: @subtitle_header;
+    }
+
+    select {
+        width: 80%;
+        margin: 0 auto;
+
+        padding: 3px;
+    }
+}
+
+@media only screen and (max-width: @tablet) {
+    .filter-panel {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .filter-form {
+        flex-direction: row;
+        height: auto;
+
+        margin: 0;
+        padding: 15px;
+    }
+}
