@@ -1,4 +1,4 @@
-export const searchHelpers = {
+const searchHelpers = {
     filter: (list, term, type) => {
         if( type === 'name' ) {
     
@@ -17,3 +17,5 @@ export const searchHelpers = {
         }
       }
 }
+
+export default searchHelpers;

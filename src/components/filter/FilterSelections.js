@@ -1,4 +1,4 @@
-export const filters = {
+const filters = {
     titles: [
         "Channel Sales Associate",
         "Outside Sales Associate",
@@ -108,3 +108,5 @@ export const filters = {
         "Wyoming"
     ]
 }
+
+export default filters;

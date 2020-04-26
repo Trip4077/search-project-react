@@ -5,13 +5,11 @@ const Preview = props => {
     const { employee } = props;
     const id_config = `${employee.id}-${employee.name.last}`
 
-    return(
+    return (
         <div className="employee-preview">
             <div className="employee-field column">
                 <img src={employee.headshot.medium} alt={employee.name.first} />
-                <button type="button" className="button" data-toggle="modal" data-target={`#${id_config}`}>
-                    Full Info
-                </button>
+                <Modal key={`${id_config}`} id={ id_config } employee={employee}/>
             </div>
             
 
@@ -29,10 +27,6 @@ const Preview = props => {
                 <div className="employee-field">
                     <h4>Department:</h4>
                     <p>{employee.department}</p>
-                </div>
-                
-                <div>
-                    <Modal key={`${id_config}`} id={ id_config } employee={employee}/>
                 </div>
             </div>
         </div>

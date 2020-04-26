@@ -1,5 +1,5 @@
 import React from 'react';
-import { filters } from './FilterSelections';
+import filters from './FilterSelections';
 
 const Panel = props => {
     const changeHandler = e => {

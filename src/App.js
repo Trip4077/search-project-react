@@ -5,7 +5,7 @@ import EmployeeList from './components/employee/EmployeeList';
 import SearchBar from './components/search/SearchBar';
 import Panel from './components/filter/Panel';
 
-import { searchHelpers } from './helpers/searchHelpers';
+import searchHelpers from './helpers/searchHelpers';
 
 const App = () => {
   /*

@@ -1,15 +1,18 @@
 import React from 'react';
 
+/*
+    This component uses a basic bootstrap modal with minor modifications
+*/
+
 const Modal = props => {
     const { employee } = props;
 
     return(
-        /*
-            Basic Bootstrap Modal for quick implemenation
-            Minor modifications for use case
-        */
-       
-        <>
+        <div>
+            <button type="button" className="button" data-toggle="modal" data-target={`#${props.id}`}>
+                Full Info
+            </button>
+
             <div className="modal fade" id={props.id} tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
@@ -44,7 +47,7 @@ const Modal = props => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
